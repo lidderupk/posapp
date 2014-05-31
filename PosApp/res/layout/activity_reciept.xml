@@ -5,4 +5,3 @@
     android:layout_height="match_parent"
     tools:context="in.poshost.posapp.activities.RecieptActivity"
     tools:ignore="MergeRootFrame" />
-

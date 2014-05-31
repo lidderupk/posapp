@@ -10,20 +10,20 @@
          android:layout_height="wrap_content"
         android:layout_marginTop="?android:attr/actionBarSize"
         android:layout_weight=".75"
-        class="in.poshost.posapp.fragment.ScanditCameraFragment" />
+        class="in.poshost.posapp.fragment.main.ScanditCameraFragment" />
     
     <fragment
         android:id="@+id/productMainFragment"
         android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-        class="in.poshost.posapp.fragment.ProductMainFragment"
+        class="in.poshost.posapp.fragment.main.ProductMainFragment"
         android:layout_weight=".15"/>
         
         <fragment
         android:id="@+id/transactionFragment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        class="in.poshost.posapp.fragment.TransactionFragment"
+        class="in.poshost.posapp.fragment.main.TransactionFragment"
         android:layout_weight=".1"/>
 
 </LinearLayout>

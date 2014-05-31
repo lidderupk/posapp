@@ -4,6 +4,7 @@ import in.poshost.posapp.R;
 import in.poshost.posapp.R.id;
 import in.poshost.posapp.R.layout;
 import in.poshost.posapp.R.menu;
+import in.poshost.posapp.fragment.reciept.RecieptFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -24,7 +25,7 @@ public class RecieptActivity extends ActionBarActivity {
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+					.add(R.id.container, new RecieptFragment()).commit();
 		}
 	}
 
@@ -47,22 +48,4 @@ public class RecieptActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_reciept,
-					container, false);
-			return rootView;
-		}
-	}
-
 }

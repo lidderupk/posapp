@@ -1,4 +1,4 @@
-package in.poshost.posapp.fragment;
+package in.poshost.posapp.fragment.main;
 
 import in.poshost.posapp.R;
 import android.os.Bundle;

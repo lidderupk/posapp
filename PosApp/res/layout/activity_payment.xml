@@ -1,8 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="in.poshost.posapp.activities.PaymentActivity"
-    tools:ignore="MergeRootFrame" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
 
+    <fragment
+        android:id="@+id/fooFragment"
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_weight=".75"
+        class="in.poshost.posapp.fragment.payment.PaymentTypeFragment" />
+    
+    <fragment
+        android:id="@+id/productMainFragment"
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        class="in.poshost.posapp.fragment.payment.PaymentDetailsFragment"
+        android:layout_weight=".15"/>
+        
+        <fragment
+        android:id="@+id/transactionFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        class="in.poshost.posapp.fragment.payment.PaymentBottomFragment"
+        android:layout_weight=".1"/>
+
+</LinearLayout>

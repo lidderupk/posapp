@@ -1,4 +1,4 @@
-package in.poshost.posapp.fragment;
+package in.poshost.posapp.fragment.main;
 
 import in.poshost.posapp.R;
 import in.poshost.posapp.activities.PaymentActivity;
@@ -25,6 +25,11 @@ public class TransactionFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.transaction_fragment,
 				container, false);
+		setupView(rootView);
+		return rootView;
+	}
+
+	private void setupView(View rootView) {
 		Button btnTransaction = (Button) rootView
 				.findViewById(R.id.btnTransaction);
 		btnTransaction.setOnClickListener(getTrasnactionButtonListener());
@@ -33,9 +38,6 @@ public class TransactionFragment extends Fragment {
 		Button btnPayment = (Button) rootView
 				.findViewById(R.id.btnPayment);
 		btnPayment.setOnClickListener(getPaymentButtonListener());
-		
-		
-		return rootView;
 	}
 
 	private OnClickListener getTrasnactionButtonListener() {

@@ -1,4 +1,4 @@
-package in.poshost.posapp.fragment;
+package in.poshost.posapp.fragment.payment;
 
 import in.poshost.posapp.R;
 import android.os.Bundle;
@@ -7,18 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ProductMainFragment extends Fragment {
+public class PaymentTypeFragment extends Fragment {
+	
+	private final static String tag = "in.poshost.posapp.fragment.payment.PaymentTypeFragment";
 
-		public ProductMainFragment() {
+		public PaymentTypeFragment() {
 		}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_product_main, container,
+			View rootView = inflater.inflate(R.layout.fragment_payment_type, container,
 					false);
-			
-//			Button button = (Button) findViewById(R.id.);
 			return rootView;
 		}
 	}
