@@ -23,7 +23,7 @@ public class TransactionFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.transaction_fragment,
+		View rootView = inflater.inflate(R.layout.fragment_main_transaction,
 				container, false);
 		setupView(rootView);
 		return rootView;
