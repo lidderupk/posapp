@@ -8,9 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.poshost.posapp.RecieptActivity$PlaceholderFragment" >
 
-    <TextView
+    <Button
+        android:id="@+id/btnPrintReciept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reciept activity" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Print Reciept" />
+
+    <Button
+        android:id="@+id/btnEmailTextReciept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPrintReciept"
+        android:layout_below="@+id/btnPrintReciept"
+        android:layout_marginTop="64dp"
+        android:text="Email / Text Reciept" />
+
+    <Button
+        android:id="@+id/btnNoReciept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnEmailTextReciept"
+        android:layout_below="@+id/btnEmailTextReciept"
+        android:layout_marginTop="64dp"
+        android:text="No Reciept" />
 
 </RelativeLayout>
