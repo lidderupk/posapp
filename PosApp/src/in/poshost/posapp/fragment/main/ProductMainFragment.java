@@ -51,11 +51,11 @@ public class ProductMainFragment extends Fragment {
 							if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE
 									&& Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
 								Log.i(tag, "Right to Left");
-							} 
-							else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE
+							} else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE
 									&& Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
 								Log.i(tag, "Left to Right");
-								Toast.makeText(getActivity(), "Product swiped",  Toast.LENGTH_SHORT).show();
+								Toast.makeText(getActivity(), "Product swiped",
+										Toast.LENGTH_SHORT).show();
 							}
 						} catch (Exception e) {
 							// nothing

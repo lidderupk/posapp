@@ -11,7 +11,8 @@ import com.mirasense.scanditsdk.ScanditSDKAutoAdjustingBarcodePicker;
 import com.mirasense.scanditsdk.interfaces.ScanditSDK;
 import com.mirasense.scanditsdk.interfaces.ScanditSDKListener;
 
-public class ScanditCameraFragment extends Fragment implements ScanditSDKListener {
+public class ScanditCameraFragment extends Fragment implements
+		ScanditSDKListener {
 
 	private ScanditSDKAutoAdjustingBarcodePicker picker;
 
@@ -21,14 +22,15 @@ public class ScanditCameraFragment extends Fragment implements ScanditSDKListene
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_main_scandit, container,
-				false);
+		View rootView = inflater.inflate(R.layout.fragment_main_scandit,
+				container, false);
 
 		picker = new ScanditSDKAutoAdjustingBarcodePicker(this.getActivity(),
-				"BiLb7ubNEeOSb3Q9WWi5VaqcrcKzgfaRC6hdPo06dew", ScanditSDK.CAMERA_FACING_BACK);
+				"BiLb7ubNEeOSb3Q9WWi5VaqcrcKzgfaRC6hdPo06dew",
+				ScanditSDK.CAMERA_FACING_BACK);
 		// Specify the object that will receive the callback events
 		picker.getOverlayView().addListener(this);
-		
+
 		this.getActivity().setContentView(picker);
 
 		return rootView;

@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
          android:layout_height="wrap_content"
         android:layout_marginTop="?android:attr/actionBarSize"
-        android:layout_weight=".75"
+        android:layout_weight=".85"
         class="in.poshost.posapp.fragment.main.ScanditCameraFragment" />
     
     <fragment
@@ -17,13 +17,13 @@
         android:layout_width="fill_parent"
          android:layout_height="wrap_content"
         class="in.poshost.posapp.fragment.main.ProductMainFragment"
-        android:layout_weight=".15"/>
+        android:layout_weight=".10"/>
         
         <fragment
         android:id="@+id/transactionFragment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         class="in.poshost.posapp.fragment.main.TransactionFragment"
-        android:layout_weight=".1"/>
+        android:layout_weight=".05"/>
 
 </LinearLayout>

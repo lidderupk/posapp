@@ -1,19 +1,10 @@
 package in.poshost.posapp.activities;
 
 import in.poshost.posapp.R;
-import in.poshost.posapp.R.id;
-import in.poshost.posapp.R.layout;
-import in.poshost.posapp.R.menu;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 
 public class PaymentActivity extends ActionBarActivity {
 
@@ -22,10 +13,10 @@ public class PaymentActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_payment);
 
-//		if (savedInstanceState == null) {
-//			getSupportFragmentManager().beginTransaction()
-//					.add(R.id.container, new PlaceholderFragment()).commit();
-//		}
+		// if (savedInstanceState == null) {
+		// getSupportFragmentManager().beginTransaction()
+		// .add(R.id.container, new PlaceholderFragment()).commit();
+		// }
 	}
 
 	@Override

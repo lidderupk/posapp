@@ -33,10 +33,8 @@ public class TransactionFragment extends Fragment {
 		Button btnTransaction = (Button) rootView
 				.findViewById(R.id.btnTransaction);
 		btnTransaction.setOnClickListener(getTrasnactionButtonListener());
-		
-		
-		Button btnPayment = (Button) rootView
-				.findViewById(R.id.btnPayment);
+
+		Button btnPayment = (Button) rootView.findViewById(R.id.btnPayment);
 		btnPayment.setOnClickListener(getPaymentButtonListener());
 	}
 
@@ -51,8 +49,7 @@ public class TransactionFragment extends Fragment {
 			}
 		};
 	}
-	
-	
+
 	private OnClickListener getPaymentButtonListener() {
 		return new OnClickListener() {
 
@@ -65,5 +62,5 @@ public class TransactionFragment extends Fragment {
 			}
 		};
 	}
-	
+
 }

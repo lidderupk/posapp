@@ -3,13 +3,11 @@ package in.poshost.posapp.activities;
 import in.poshost.posapp.R;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
-	
+
 	private final static String tag = "in.poshost.posapp.activities.MainActivity";
 
 	@Override
@@ -17,10 +15,10 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-//		if (savedInstanceState == null) {
-//			getSupportFragmentManager().beginTransaction()
-//					.add(R.id.container, new PlaceholderFragment()).commit();
-//		}
+		// if (savedInstanceState == null) {
+		// getSupportFragmentManager().beginTransaction()
+		// .add(R.id.container, new PlaceholderFragment()).commit();
+		// }
 	}
 
 	@Override
@@ -28,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-		
+
 		return true;
 	}
 
