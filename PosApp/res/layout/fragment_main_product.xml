@@ -10,7 +10,7 @@
     tools:context="in.poshost.posapp.activities.MainActivity$ProductMainFragment" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvTaxLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -40,13 +40,13 @@
         android:id="@+id/imageView1"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/tvTaxLabel"
+        android:layout_below="@+id/tvTaxLabel"
         android:layout_marginLeft="14dp"
         android:src="@drawable/bose_ie2_headphones" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvTax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="100.00 | x2 | 200.00"

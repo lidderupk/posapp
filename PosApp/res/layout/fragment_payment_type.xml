@@ -9,41 +9,40 @@
     tools:context="in.poshost.posapp.PaymentActivity$PlaceholderFragment" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvCash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="31dp"
-        android:text="TextView" />
+        android:text="Cash" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/etCash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBaseline="@+id/tvCash"
+        android:layout_alignBottom="@+id/tvCash"
         android:layout_alignParentRight="true"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvCreditCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="28dp"
-        android:layout_toLeftOf="@+id/editText1"
-        android:text="TextView" />
+        android:layout_marginTop="100dp"
+        android:layout_alignLeft="@+id/tvCash"
+        android:text="Credit Card" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etCreditCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignBaseline="@+id/tvCreditCard"
+        android:layout_alignBottom="@+id/tvCreditCard"
+        android:layout_alignRight="@+id/etCash"
         android:ems="10"
         android:inputType="numberSigned" >
 

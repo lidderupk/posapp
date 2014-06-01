@@ -1,0 +1,29 @@
+commit bb722fdfbbcf1da055ffab26eb408a428bd3d60d
+Author: 8indaas <8indaas@gmail.com>
+Date:   Sat May 31 18:54:43 2014 -0700
+
+    renamed files and added swipe gesture to product
+
+commit 57334f6a166e809149b0c0e7bf6a3d996c50d40a
+Author: 8indaas <8indaas@gmail.com>
+Date:   Sat May 31 18:12:56 2014 -0700
+
+    linked reciept to main flow
+
+commit 6cd3bf69878285ef71e8254621dd5b25b7b5c781
+Author: 8indaas <8indaas@gmail.com>
+Date:   Sat May 31 14:22:32 2014 -0700
+
+    added reciept flow
+
+commit 6ba4936c3c38d8fba5a99951ad44e364a671c62c
+Author: 8indaas <8indaas@gmail.com>
+Date:   Sat May 31 13:50:59 2014 -0700
+
+    adding remaining structure or all activities and fragments
+
+commit 1714aa6210d142d9a84ca9b77f616166c6bc1089
+Author: 8indaas <8indaas@gmail.com>
+Date:   Wed May 28 18:55:18 2014 -0700
+
+    first commit
