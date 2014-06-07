@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.poshost.posapp.activities.PaymentActivity$PaymentBottomFragment"
-    android:background="#ffffff">
+    >
 
 	<Button
         android:id="@+id/btnCamera"
