@@ -5,16 +5,17 @@
 
     <ImageView
         android:id="@+id/ivItemPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_height="100sp"
+        android:layout_width="100sp"
         android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
 
     <TextView
         android:id="@+id/tvItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_alignTop="@+id/ivItemPic"
         android:layout_toRightOf="@+id/ivItemPic"
         android:text="Medium Text"
@@ -33,18 +34,29 @@
         android:id="@+id/tvItemPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="17dp"
+        android:layout_marginLeft="27dp"
         android:layout_alignTop="@+id/tvItemName"
         android:layout_toRightOf="@+id/tvItemName"
         android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/tvItemx"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvItemPrice"
+        android:layout_toRightOf="@+id/tvItemPrice"
+        android:text="x"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/tvItemQty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_alignTop="@+id/tvItemPrice"
-        android:layout_toRightOf="@+id/tvItemPrice"
+        android:layout_toRightOf="@+id/tvItemx"
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -52,8 +64,9 @@
         android:id="@+id/tvItemTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
         android:layout_alignTop="@+id/tvItemQty"
         android:layout_alignParentRight="true"
-        android:text="TextView" />
+        android:text="Large Text" />
 
 </RelativeLayout>

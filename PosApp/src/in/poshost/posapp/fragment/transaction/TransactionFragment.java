@@ -54,6 +54,8 @@ public class TransactionFragment extends Fragment {
             t.setUid(i);
             t.setName("name: " + i);
             t.setDesc("desc: " + i);
+            t.setPrice(10 * i);
+            t.setQuantity(i);
             transactions.add(t);
         }
     }

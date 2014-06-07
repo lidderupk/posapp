@@ -4,10 +4,21 @@
     android:orientation="vertical"
      >
 
+    
+    
     <fragment
         android:id="@+id/fooFragment"
         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight=".90"
         android:layout_marginTop="?android:attr/actionBarSize"
         class="in.poshost.posapp.fragment.transaction.TransactionFragment" />
+    
+    
+        <fragment
+        android:id="@+id/transactionFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        class="in.poshost.posapp.fragment.payment.PaymentBottomFragment"
+        android:layout_weight=".1"/>
 </LinearLayout>
