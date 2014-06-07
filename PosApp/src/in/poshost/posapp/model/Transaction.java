@@ -6,7 +6,9 @@ public class Transaction {
 	private String name;
 	private String desc;
 	private String createdAt;
-	private String pic;
+	private String picUrl;
+	private double price;
+	private int quantity;
 	
 	
 	public long getUid() {
@@ -33,11 +35,24 @@ public class Transaction {
 	public void setCreatedAt(String createdAt) {
 		this.createdAt = createdAt;
 	}
-	public String getPic() {
-		return pic;
+	public String getPicUrl() {
+		return picUrl;
 	}
-	public void setPic(String pic) {
-		this.pic = pic;
+	public void setPicUrl(String pic) {
+		this.picUrl = pic;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 	
 	@Override
