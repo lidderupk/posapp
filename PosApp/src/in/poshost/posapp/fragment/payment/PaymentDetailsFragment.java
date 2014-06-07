@@ -1,3 +1,4 @@
+
 package in.poshost.posapp.fragment.payment;
 
 import in.poshost.posapp.R;
@@ -9,18 +10,18 @@ import android.view.ViewGroup;
 
 public class PaymentDetailsFragment extends Fragment {
 
-	private final static String tag = "in.poshost.posapp.fragment.payment.PaymentDetailsFragment";
+    private final static String tag = "in.poshost.posapp.fragment.payment.PaymentDetailsFragment";
 
-	public PaymentDetailsFragment() {
-	}
+    public PaymentDetailsFragment() {
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_payment_detail,
-				container, false);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_payment_detail,
+                container, false);
 
-		// Button button = (Button) findViewById(R.id.);
-		return rootView;
-	}
+        // Button button = (Button) findViewById(R.id.);
+        return rootView;
+    }
 }

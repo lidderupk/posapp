@@ -1,3 +1,4 @@
+
 package in.poshost.posapp.fragment.reciept;
 
 import in.poshost.posapp.R;
@@ -14,38 +15,38 @@ import android.widget.Button;
 
 public class RecieptFragment extends Fragment {
 
-	private final static String tag = "in.poshost.posapp.fragment.payment.PaymentDetailsFragment";
+    private final static String tag = "in.poshost.posapp.fragment.payment.PaymentDetailsFragment";
 
-	public RecieptFragment() {
-	}
+    public RecieptFragment() {
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_reciept, container,
-				false);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_reciept, container,
+                false);
 
-		setupViews(rootView);
+        setupViews(rootView);
 
-		return rootView;
-	}
+        return rootView;
+    }
 
-	private void setupViews(View rootView) {
-		Button btnNoReciept = (Button) rootView.findViewById(R.id.btnNoReciept);
-		btnNoReciept.setOnClickListener(getNoRecieptButtonListener());
-	}
+    private void setupViews(View rootView) {
+        Button btnNoReciept = (Button) rootView.findViewById(R.id.btnNoReciept);
+        btnNoReciept.setOnClickListener(getNoRecieptButtonListener());
+    }
 
-	private OnClickListener getNoRecieptButtonListener() {
-		return new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				Log.i(tag, "No reciept button clicked");
+    private OnClickListener getNoRecieptButtonListener() {
+        return new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Log.i(tag, "No reciept button clicked");
 
-				Intent in = new Intent(getActivity(), MainActivity.class);
-				in.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(in);
-			}
-		};
-	}
+                Intent in = new Intent(getActivity(), MainActivity.class);
+                in.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(in);
+            }
+        };
+    }
 
 }
