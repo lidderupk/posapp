@@ -1,8 +1,14 @@
 
 package in.poshost.posapp.model;
 
-public class Transaction {
+import java.io.Serializable;
 
+public class Transaction implements Serializable {
+    
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -4730307012985714066L;
     private long uid;
     private String name;
     private String desc;

@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 public class TransactionAdapter extends ArrayAdapter<Transaction> {
 
+    private final static String tag = "in.poshost.posapp.fragment.transaction.TransactionAdapter";
+
     public TransactionAdapter(Context context,
             ArrayList<Transaction> transactions) {
         super(context, R.layout.item_transaction, transactions);

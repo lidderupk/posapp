@@ -6,19 +6,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="in.poshost.posapp.activities.EditProductActivity$bottom"
+    tools:context="in.poshost.posapp.activities.EditProductActivity$BottomFragment"
     >
 
 	<Button
-        android:id="@+id/btnCamera"
+        android:id="@+id/btnEditProductReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="camera" />
+        android:text="Return" />
     
     <Button
-        android:id="@+id/btnPaymentFinal"
+        android:id="@+id/btnEditProductPaymentFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="999.00"

@@ -2,15 +2,20 @@
 package in.poshost.posapp.fragment.transaction;
 
 import in.poshost.posapp.R;
+import in.poshost.posapp.activities.EditProductActivity;
 import in.poshost.posapp.model.Transaction;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class TransactionFragment extends Fragment {
@@ -43,6 +48,20 @@ public class TransactionFragment extends Fragment {
         // aTransaction = new ArrayAdapter<Transaction>(this.getActivity(),
         // android.R.layout.simple_list_item_1, transactions);
         lvTransactions.setAdapter(ad);
+        lvTransactions.setOnItemClickListener(getItemClickListener());
+    }
+
+    private OnItemClickListener getItemClickListener() {
+        return new OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i(tag, "item clicked");
+                Intent in = new Intent(getActivity(), EditProductActivity.class);
+                in.putExtra("TRANSACTION", transactions.get(position));
+                startActivity(in);
+            }
+        };
     }
 
     private void populateTransactions() {
