@@ -71,8 +71,8 @@ public class TransactionFragment extends Fragment {
         for (int i = 0; i < 25; i++) {
             Transaction t = new Transaction();
             t.setUid(i);
-            t.setName("name: " + i);
-            t.setDesc("desc: " + i);
+            t.setName("Item name: " + i);
+            t.setDesc("Item desc: " + i);
             t.setPrice(10 * i);
             t.setQuantity(i);
             transactions.add(t);
