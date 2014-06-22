@@ -4,7 +4,7 @@ import com.activeandroid.Model;
 
 public class Item extends Model {
   //auto increment id automatically generated
-    public int departmentID;
+    public Department department;
     public int dimID1;
     public int dimID2;
     public String item;
