@@ -11,7 +11,7 @@ public class Dimension extends Model {
     
     public Item item;
     
-    public List<Attributes> getAttributes(){
-        return getMany(Attributes.class, "Dimension");
+    public List<Attribute> getAttributes(){
+        return getMany(Attribute.class, "Dimension");
     }
 }

@@ -9,6 +9,7 @@ public class Item extends Model {
     public int dimID2;
     public String item;
     public String itemPic;
+    public String name;
     
     public Catalog catalog;
 }
