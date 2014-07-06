@@ -27,6 +27,12 @@ public class EditProductFragment extends Fragment {
 
     public EditProductFragment() {
     }
+    
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+    	// TODO Auto-generated method stub
+    	super.onCreate(savedInstanceState);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

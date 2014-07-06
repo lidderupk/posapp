@@ -18,7 +18,7 @@ import com.activeandroid.query.Select;
 
 public class MainActivity extends ActionBarActivity {
 
-	private final static String tag = "in.poshost.posapp.activities.MainActivity";
+	private final static String tag = MainActivity.class.getName();//"in.poshost.posapp.activities.MainActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,9 @@ public class MainActivity extends ActionBarActivity {
 		// getSupportFragmentManager().beginTransaction()
 		// .add(R.id.container, new PlaceholderFragment()).commit();
 		// }
+		
+		setModel();
+		getModel();
 	}
 
 	@Override
@@ -36,9 +39,17 @@ public class MainActivity extends ActionBarActivity {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		Log.i(tag,"this is my message");
 
 		return true;
 	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+	
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -57,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
 
 		Catalog cat = new Catalog();
 		cat.description = "catalog 1";
+		cat.save();
 
 		for (int i = 0; i < 10; i++) {
 			Item item = new Item();
@@ -75,14 +87,16 @@ public class MainActivity extends ActionBarActivity {
 			di.save();
 			att.save();
 		}
-
-		cat.save();
 	}
 
 	private void getModel() {
 		Catalog cat = new Select().from(Catalog.class).orderBy("RANDOM()")
 				.executeSingle();
 		List<Item> items = cat.items();
+		
+		for(Item i: items){
+			Log.i(tag, i.name);
+		}
 		Log.i("", "");
 	}
 

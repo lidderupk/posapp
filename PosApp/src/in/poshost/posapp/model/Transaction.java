@@ -3,18 +3,34 @@ package in.poshost.posapp.model;
 
 import java.io.Serializable;
 
+import com.activeandroid.annotation.Column;
+
 public class Transaction implements Serializable {
     
     /**
      * 
      */
     private static final long serialVersionUID = -4730307012985714066L;
+    
+    @Column(name="uid")
     private long uid;
+    
+    @Column(name="name")
     private String name;
+    
+    @Column(name="desc")
     private String desc;
+    
+    @Column(name="createdAt")
     private String createdAt;
+    
+    @Column(name="picUrl")
     private String picUrl;
+    
+    @Column(name="price")
     private double price;
+    
+    @Column(name="quantity")
     private int quantity;
 
     public long getUid() {
